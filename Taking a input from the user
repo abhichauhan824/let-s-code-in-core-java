@@ -1,0 +1,14 @@
+
+import java.util.*;
+
+class Demo{
+      public static void main(String a[]){
+      
+             Scanner sc = new Scanner(System.in);
+             String str = sc.nexrLine();
+             int age = sc.nextInt();
+             
+             System.out.println("Enter your Name :" + str);
+             System.out.println("Enter your age :" + age);
+      }
+}
