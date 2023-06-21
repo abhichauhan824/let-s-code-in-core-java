@@ -1,0 +1,24 @@
+
+import java.io.*;
+import java.util.*;
+
+class Demo{
+      public static void main(String a[]){
+           
+           Demo obj = new Demo();
+           
+           obj.add(5,6);
+           System.out.println(obj.add(5,6));
+           obj.add(11.4,7);
+           System.out.println(obj.add(5.6,6));
+      }
+      
+        static int add(int x, int y){
+                 return x + y;
+             } 
+             
+        static double add(double x, double y){
+        return x + y;
+        }
+             
+}
