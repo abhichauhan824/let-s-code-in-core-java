@@ -1,0 +1,22 @@
+
+class kadanes {
+    public static void main(String a[]){
+        int array[] = {5-4,-2,6,-1};
+
+        System.out.println("Sum of subarray is :" + " " + maxsum(array));
+    }
+    public static int maxsum(int ar[]) {
+        int cursum = 0;
+        int maxsum = 0;
+        for (int i = 0; i < ar.length; i++) {
+            cursum = cursum + ar[i];
+            if (cursum > maxsum) {
+                maxsum = cursum;
+            }
+            if (cursum < 0) {
+                cursum = 0;
+            }
+        }
+        return maxsum;
+    }
+}
